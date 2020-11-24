@@ -52,6 +52,9 @@ anchor = "smart"
 # Language configuration
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 1
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
