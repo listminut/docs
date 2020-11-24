@@ -24,6 +24,10 @@ You have something you need to work on :
 8. **Edit the description** to explain in more detail what this PR is adding/modifying. The default description puts all your commit messages one under the other. This is a pretty good default, but you can remove what you feel is not necessary and add what you feel is missing, this is up to you. (ex: If I have some commits like "rubocop", "small bugfix", "PR comments", "rubocop again", these are not needed in the final description).
 9. Click "**Confirm squash and merge**"
 
+> Don't hesitate to use the "**Update branch**" button on GitHub that appears whenever your branch is outdated.
+>
+> This creates a merge commit, but as you are later squashing all commits together this is not an issue anymore.
+
 ## Why ?
 
 We would like to avoid using merge commits at all costs, as those create a Git history that is very hard to follow.
