@@ -13,10 +13,11 @@ Note : This is maybe not perfect and is definitely open to suggestions, but we'd
 This is the workflow we would like to try out for now.
 
 You have something you need to work on :
+
 1. You **pull** the latest changes from master.
 2. You create a **branch** from master, called `dev-name/branch-name` (ex: `tim/T-123-admin-pro-subscription`).
-3. You **work** on that branch however you like, you can commit/push/rebase as many times as you want. Note that it's usually recommended to do a lot of small commits instead of working locally for 3 days and then doing one big commit. But this is up to you.
-4. Once you're done, **create a PR** on GitHub.
+3. You **work** on that branch however you like, you can commit/push/rebase as many times as you want. _Note that it's usually recommended to do a lot of small commits instead of working locally for 3 days and then doing one big commit. But this is up to you._
+4. Once you're done, **create a PR** on GitHub. _Note that you can also create a **draft PR** in case your work is not ready but you want to start making use of the CI or get some feedback_
 5. You can **continue working** on the branch to address any comments / bugfixes / ...
 6. When your PR is accepted and ready to merge, go on the page of your PR on GitHub and click "**Squash and merge**" (The big green button, click on the little arrow and choose "Squash and merge" and not any of the other options).
 7. **Edit the title** of the commit to start with the Height ticket (if applicable), followed by what this PR is adding, and leave the PR number at the end. ex: `T-123 Admin page for ProSubscription and ProSubscriptionPayment (#903)`
@@ -27,6 +28,7 @@ You have something you need to work on :
 
 We would like to avoid using merge commits at all costs, as those create a Git history that is very hard to follow.
 Example:
+
 ```
 * ff6d75661 added check to prevent counting cancelled and old tasks when computing the daily allowances
 * f12dfdd4f T-12939
@@ -40,8 +42,8 @@ Example:
 * 1adc7c282 Handle task without associated SP
 ```
 
-The usually recommended way to work is to use rebases ([This](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/) is a good article explaining that).
-This creates a nice and linear Git history:
+The usually recommended way to work is to use rebases ([This](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/) is a good article explaining that). This creates a nice and linear Git history:
+
 ```
 * cc789766d Update SEM NL Client title
 * 38c6aa33a Update SEM NL Client headings
@@ -50,12 +52,14 @@ This creates a nice and linear Git history:
 ```
 
 But we feel like rebasing can sometimes be time-consuming, can be "scary" for people who aren't used to it, and will leave a lot of "ugly" or useless commit messages in the history:
+
 ```
-* 156d84e5e Mauro Feedbacks
-* a81833887 remove comments
+* 156d84e5e PR review feedback
+* a81833887 remove empty spaces
 * 5491e1a9c label as feature
-* 180d8f08e complete apply page feature test
-* e491cd393 pause dev to fix urgent bug on master
+* 180d8f08e add feature test
+* e491cd393 WIP
+
 ```
 This can be fixed by cleaning up your commit history before rebasing, but this is even more time-consuming/scary.
 
