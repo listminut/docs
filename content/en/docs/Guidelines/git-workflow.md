@@ -71,8 +71,10 @@ So we are opting for an intermediate solution where we don't have to use any com
 
 The problem with this solution is that it only allows you to squash your entire PR in one single commit, which should be alright for most cases, but could be a problem for bigger branches (ex: the christmas-tree branch we had recently).
 
-## Working with bigger branches
+## Working with project branches (long lived branches)
 
-If you need more than a single commit message for your PR, you will have to manualy clean up your branch history by squashing some commits together, and once the branch is clean and only contains usefull commit messages, you can use "rebase and merge".
+{{% alert title="Warning" color="warning" %}}
+This section is a WIP 
+{{% /alert %}}
 
-**TODO**: Mauro can probably explain this part in more detail.
+When working on a project we use long lived branches which follow the naming convention `project-NAME` where name is the name of the project. The branch is created by the team lead before staring to work on the project. Every one starting to work on a ticket, can start a branch based on this project branch and follow the same indications at the begining of this section.
