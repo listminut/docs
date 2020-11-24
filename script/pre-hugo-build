@@ -1,6 +1,8 @@
 #!/bin/sh
 set -x
 
+git submodule update --init --recursive
+
 cd $1
 npm install -D --save autoprefixer
 npm install -D --save postcss-cli
