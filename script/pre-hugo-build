@@ -5,12 +5,10 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-cd $BUILD_DIR
+rm -rf $BUILD_DIR/themes && mkdir $BUILD_DIR/themes && cd $BUILD_DIR/themes
+git clone --recurse-submodules --depth 1 https://github.com/google/docsy.git $DOCSY_DIR
 
-DOCSY_DIR="themes/docsy"
-if [ ! -d "$DOCSY_DIR" ]; then
-    git clone --recurse-submodules --depth 1 https://github.com/google/docsy.git $DOCSY_DIR
-fi
+cd $BUILD_DIR
 
 npm install -D --save autoprefixer
 npm install -D --save postcss-cli
