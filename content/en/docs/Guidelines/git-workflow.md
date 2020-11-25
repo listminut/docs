@@ -63,8 +63,8 @@ But we feel like rebasing can sometimes be time-consuming, can be "scary" for pe
 * 5491e1a9c label as feature
 * 180d8f08e add feature test
 * e491cd393 WIP
-
 ```
+
 This can be fixed by cleaning up your commit history before rebasing, but this is even more time-consuming/scary.
 
 So we are opting for an intermediate solution where we don't have to use any complex git commands and can just continue working as before, but by doing a "squash and merge" it should keep the git history nice and easy to follow.
@@ -78,3 +78,10 @@ This section is a WIP
 {{% /alert %}}
 
 When working on a project we use long lived branches which follow the naming convention `project-NAME` where name is the name of the project. The branch is created by the team lead before staring to work on the project. Every one starting to work on a ticket, can start a branch based on this project branch and follow the same indications at the begining of this section.
+
+## Helpful Sources
+
+These are some sources to level up your Git
+
+- [Pro Git Book](https://git-scm.com/book/en/v2)
+- [Git exercises](https://gitexercises.fracz.com/)
