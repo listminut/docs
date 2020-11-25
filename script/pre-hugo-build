@@ -1,13 +1,16 @@
 #!/bin/sh
 set -x
 
-DOCSY_DIR="themes/docsy"
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
 
+cd $BUILD_DIR
+
+DOCSY_DIR="themes/docsy"
 if [ ! -d "$DOCSY_DIR" ]; then
     git clone --recurse-submodules --depth 1 https://github.com/google/docsy.git $DOCSY_DIR
 fi
 
-
-cd $1
 npm install -D --save autoprefixer
 npm install -D --save postcss-cli
