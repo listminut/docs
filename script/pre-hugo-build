@@ -1,7 +1,11 @@
 #!/bin/sh
 set -x
 
-git submodule update --init --recursive
+DOCSY_DIR = "themes/docsy"
+if [ ! -d "$DOCSY_DIR" ]; then
+  git clone --recurse-submodules --depth 1 https://github.com/google/docsy.git $DOCSY_DIR
+fi
+
 
 cd $1
 npm install -D --save autoprefixer
