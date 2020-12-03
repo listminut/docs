@@ -15,12 +15,12 @@ This is the workflow we would like to try out for now.
 You have something you need to work on :
 
 1. You **pull** the latest changes from master.
-2. You create a **branch** from master, called `dev-name/branch-name` (ex: `tim/T-123-admin-pro-subscription`).
+2. You create a **branch** from master, called `dev-name/T-123-branch-name` (ex: `tim/T-12534-admin-pro-subscription`).
 3. You **work** on that branch however you like, you can commit/push/rebase as many times as you want. _Note that it's usually recommended to do a lot of small commits instead of working locally for 3 days and then doing one big commit. But this is up to you._
 4. Once you're done, **create a PR** on GitHub. _Note that you can also create a **draft PR** in case your work is not ready but you want to start making use of the CI or get some feedback_
 5. You can **continue working** on the branch to address any comments / bugfixes / ...
 6. When your PR is accepted and ready to merge, go on the page of your PR on GitHub and click "**Squash and merge**" (The big green button, click on the little arrow and choose "Squash and merge" and not any of the other options).
-7. **Edit the title** of the commit to start with the Height ticket (if applicable), followed by what this PR is adding, and leave the PR number at the end. ex: `T-123 Admin page for ProSubscription and ProSubscriptionPayment (#903)`
+7. **Edit the title** of the commit to start with the Height ticket (if applicable), followed by what this PR is adding, and leave the PR number at the end. ex: `HEIGHT-123 Admin page for ProSubscription and ProSubscriptionPayment (#903)`
 8. **Edit the description** to explain in more detail what this PR is adding/modifying. The default description puts all your commit messages one under the other. This is a pretty good default, but you can remove what you feel is not necessary and add what you feel is missing, this is up to you. (ex: If I have some commits like "rubocop", "small bugfix", "PR comments", "rubocop again", these are not needed in the final description).
 9. Click "**Confirm squash and merge**"
 
