@@ -17,15 +17,11 @@ a dozen of external services are integrated to enhance functionality.
 
 ![Infrastructure](/img/Infrastructure.png)
 
-## 1. Heroku Enterprise Space
+## 1. Cloudflare
 
-We use Heroku Enterprise Space for our core application
-
-**Planned changes**
-
-- [Deployment process is taking too long #882](https://github.com/listminut/listminutv3/issues/882)
-- [Configure ruby metrics in Heroku #983](https://github.com/listminut/listminutv3/issues/983)
-- Evaluate if we should move to performance L dynos
+Whenever a client calls ListMinut's web application or API, they go through
+Clouflare, they handle DNS for listminut.be domain, and add a security layer
+which helps mitigate DDoS attacks and other issues.
 
 ## 2. Heroku Router
 
@@ -54,6 +50,9 @@ Ubuntu LTS. All of them send performance stats to [New Relic](#8-new-relic).
 - [Upgrade Ruby on Rails #700](https://github.com/listminut/listminutv3/issues/700)
 - [Upgrade Ruby #699](https://github.com/listminut/listminutv3/issues/699)
 - [Have the same build for all environments #411](https://github.com/listminut/listminutv3/issues/411)
+- [Deployment process is taking too long #882](https://github.com/listminut/listminutv3/issues/882)
+- [Configure ruby metrics in Heroku #983](https://github.com/listminut/listminutv3/issues/983)
+- Evaluate if we should move to performance L dynos
 
 ### 3a. Web Dynos
 
@@ -68,6 +67,7 @@ dynos](#3c-worker-dynos).
 **Planned changes**
 
 - [Heroku's H12 long running requests #278](https://github.com/listminut/listminutv3/issues/278)
+- Use the same Rollbar for all environments
 
 **Possible improvements**
 
@@ -75,8 +75,15 @@ dynos](#3c-worker-dynos).
 
 ### 3b. One-off Dynos
 
-We use one-off dynos for (a) scheduled jobs, e.g. Synchronization of the
-mailing list, and (b) whenever we manually spawn a dyno via the Heroku's CLI.
+We use one-off dynos for:
+
+a. scheduled jobs, e.g. Synchronization of the mailing lists. The system that
+   takes care of the timing and executing the jobs is [Heroku
+   Scheduler](https://devcenter.heroku.com/articles/scheduler), which is a sort
+   of cron job system with very limited capabilities but which allows you to
+   easily execute any CLI command included in the Gemfile, most commonly rake
+b. manually spawning a dyno via the Heroku's CLI to be able to debug or execute
+   code in production
 
 **Possible improvements**
 
