@@ -6,6 +6,10 @@ description: >
   Guidelines on how to test Stripe API in development.
 ---
 
+{{% pageinfo %}}
+Note : Before going further be sure to have an account for Stripe. If not contact Scoum to receive the access that you will have to use for the login in the next steps.
+{{% /pageinfo %}}
+
 ## Stripe Developer Dashboard
 
 Stripe offers a useful dashboard for developers to manage testing datas.
@@ -35,6 +39,19 @@ When you are logged, you can launch the server on your machine with this command
 ```
 stripe listen --forward-to localhost:3000/hooks/stripe_events
 ```
+One more step, you will now need to add an ENV variable in your file : local_env.yml.
+
+```
+STRIPE_WEBHOOK: 'whsec_XXXXXXXXXXXXXXXXXX'
+```
+
+You can find the correct whsec_XXXXXXXXXXXXXXXXXX by looking the Stripe server logs you just started.
+```
+Ready! Your webhook signing secret is whsec_XXXXXXXXXXXXXXXXXX
+```
+
+Don't forget to restart your Ruby server + Stripe server and you are now ready for testing :-)
+
 
 
 ## Testing Bancontact flow
