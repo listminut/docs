@@ -1,6 +1,7 @@
 ---
 title: "Investigate long parameter lists"
 linkTitle: "Long Parameters"
+toc_hide: true
 weight: 1300
 date: 2021-03-08
 description: >-

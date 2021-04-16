@@ -1,6 +1,7 @@
 ---
 title: "Trim your branches"
 linkTitle: "Branches"
+toc_hide: true
 weight: 500
 date: 2021-03-08
 description: Fewer branches are easier to navigate for you and everyone in the team

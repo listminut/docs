@@ -1,6 +1,7 @@
 ---
 title: "Extract Method"
 linkTitle: "Extract Method"
+toc_hide: true
 weight: 1900
 date: 2021-03-08
 description: >-

@@ -1,6 +1,7 @@
 ---
 title: "Investigate your slowest test(s)"
 linkTitle: "Slow Tests"
+toc_hide: true
 weight: 1000
 date: 2021-03-08
 description: >-

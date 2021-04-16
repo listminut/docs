@@ -1,6 +1,7 @@
 ---
 title: "Audit your DB schema"
 linkTitle: "DB Schema"
+toc_hide: true
 weight: 1500
 date: 2021-03-08
 description: >-

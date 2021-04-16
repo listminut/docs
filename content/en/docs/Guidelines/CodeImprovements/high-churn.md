@@ -1,6 +1,7 @@
 ---
 title: "Investigate high-churn files"
 linkTitle: "High-churn"
+toc_hide: true
 weight: 1700
 date: 2021-03-08
 description: >-

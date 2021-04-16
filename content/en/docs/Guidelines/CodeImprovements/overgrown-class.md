@@ -1,6 +1,7 @@
 ---
 title: "Slim down an overgrown class"
 linkTitle: "Overgrown Class"
+toc_hide: true
 weight: 700
 date: 2021-03-08
 description: >-

@@ -1,6 +1,7 @@
 ---
 title: "Get rid of a warning"
 linkTitle: "Warnings"
+toc_hide: true
 weight: 300
 date: 2021-03-08
 description: Get rid of a warning you've gotten used to ignoring

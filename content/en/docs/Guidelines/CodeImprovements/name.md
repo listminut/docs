@@ -1,6 +1,7 @@
 ---
 title: "Improve one name"
 linkTitle: "Improve one name"
+toc_hide: true
 weight: 1100
 date: 2021-03-08
 description: >-

@@ -1,6 +1,7 @@
 ---
 title: "Create/update your snippets"
 linkTitle: "Snippets"
+toc_hide: true
 weight: 1700
 date: 2021-03-08
 description: >-

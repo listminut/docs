@@ -1,6 +1,7 @@
 ---
 title: "Begin plugging a knowledge gap"
 linkTitle: "Knowledge Gap"
+toc_hide: true
 weight: 1800
 date: 2021-03-08
 description: >-

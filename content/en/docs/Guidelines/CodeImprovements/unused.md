@@ -1,6 +1,7 @@
 ---
 title: "Excise some unused code"
 linkTitle: "Unused Code"
+toc_hide: true
 weight: 400
 date: 2021-03-08
 description: Let's track down some code that's not actually in use (and delete it, naturally).

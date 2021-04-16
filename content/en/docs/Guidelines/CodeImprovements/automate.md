@@ -1,6 +1,7 @@
 ---
 title: "Automate a repetitive action"
 linkTitle: "Automate"
+toc_hide: true
 weight: 1300
 date: 2021-03-08
 description: >-

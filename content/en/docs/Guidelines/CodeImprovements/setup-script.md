@@ -1,6 +1,7 @@
 ---
 title: "Create a setup script"
 linkTitle: "Setup Script"
+toc_hide: true
 weight: 800
 date: 2021-03-08
 description: >-

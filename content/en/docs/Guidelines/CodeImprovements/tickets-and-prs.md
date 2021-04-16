@@ -1,6 +1,7 @@
 ---
 title: "Tidy your Tickets and PRs"
 linkTitle: "Tickets & PRs"
+toc_hide: true
 weight: 1200
 date: 2021-03-08
 description: >-

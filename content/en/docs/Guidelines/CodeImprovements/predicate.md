@@ -1,6 +1,7 @@
 ---
 title: "Extract a compound conditional"
 linkTitle: "Compound Conditional"
+toc_hide: true
 weight: 600
 date: 2021-03-08
 description: >-

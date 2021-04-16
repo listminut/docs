@@ -1,6 +1,7 @@
 ---
 title: "Audit your dependencies"
 linkTitle: "Dependencies"
+toc_hide: true
 weight: 1200
 date: 2021-03-08
 description: >-

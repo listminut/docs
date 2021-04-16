@@ -8,7 +8,9 @@ description: >-
 
 ## Only update a model when it has changed
 
-Updating data in a model requires a call to the DB. However, if the data being updated, is already in the right state, this call would be a waste. You can validate whether you need to do an update using the `changed?` method.
+Updating data in a model requires a call to the DB. However, if the data being
+updated, is already in the right state, this call would be a waste. You can
+validate whether you need to do an update using the `changed?` method.
 
 Instead of doing this:
 
