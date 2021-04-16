@@ -96,4 +96,4 @@ Once the new method has passed all the tests and performs to the desired standar
 
 ### Share Learnings
 
-Finally if you have made any changes or solved a problem that might reoccur in the future, don't hesitate to write an entry to the best practices page of our documentation: http://lm-docs.herokuapp.com/docs/best-practices/
+Finally if you have made any changes or solved a problem that might reoccur in the future, don't hesitate to write an entry to the best practices page of our documentation: https://lm-docs.herokuapp.com/docs/guidelines/best-practices/
