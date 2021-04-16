@@ -20,17 +20,17 @@ This page explains the process used for performance upgrades. The four main step
 To identify any slow and non performant code using a Profiling tool is useful. Currently MiniProfiler is included to the development server and can easily be used on any slow pages.  
 You will be able to open the MiniProfiler tool on the top left of the page in question.
   
-<img width="343" alt="Screenshot 2021-04-16 at 09 57 29" src="https://user-images.githubusercontent.com/33180547/115031492-81026e00-9ec8-11eb-9108-f0b757735f3a.png"> 
+![Button](/img/Performance%20Workflow/MiniProfiler%20Button.png)  
 
 Once you have opened the MiniProfiler look for code that takes a long time to run and/or excessive numbers of SQL requests.
   
-<img width="646" alt="Screenshot 2021-04-16 at 09 57 45" src="https://user-images.githubusercontent.com/33180547/115031984-16056700-9ec9-11eb-925c-40382dbd4021.png">
+![Breakdown](/img/Performance%20Workflow/MiniProfiler%20Breakdown.png)
   
 By clicking on the SQL query breakdown you can further understand which queries take long times to execute or that are repeated multiple times.
   
-<img width="1351" alt="Screenshot 2021-04-16 at 09 59 40" src="https://user-images.githubusercontent.com/33180547/115032376-8613ed00-9ec9-11eb-8e02-06a2966951f9.png">
+![Slow Request](/img/Performance%20Workflow/MiniProfiler%20slow%20request.png)
   
-<img width="1264" alt="Screenshot 2021-04-16 at 10 11 26" src="https://user-images.githubusercontent.com/33180547/115032529-b3f93180-9ec9-11eb-9312-f4f4e7732735.png">
+![Repeated Request](/img/Performance%20Workflow/MiniProfiler%20repeated%20request.png)
   
 You will see that the queries have a the traceback which will lead you to the exact section of code causing the issue.  
 Here the issue is due to the code in `app/controllers/listworkers_controller.rb` :
