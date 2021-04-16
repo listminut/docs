@@ -13,7 +13,7 @@ This page explains the process used for performance upgrades. The four main step
 1. [Run MiniProfiler](#miniprofiler) on the page, look at the times for code execution and the number of queries
 1. [Extract non-performant code into it’s own method and test](#extract-and-test) it as is
 1. [Create new version of the method](#improve-performance) with the more faster code
-1. [Archive](#archive) the old code including the commit id
+1. [Share learnings](#share-learnings) you have made in the Best Practices page
 
 ### MiniProfiler
 
@@ -94,15 +94,6 @@ end
 ```
 Once the new method has passed all the tests and performs to the desired standard, you should commit you work.
 
-### Archive
+### Share Learnings
 
-Finally it is time to archive your work. The archiving of the improvement is done in `spec/performance/PERFORMANCE_ARCHIVE.md`. For this the following information should be included:
-
-* Date of commit
-* Commit id for the change
-* How many times faster the new method is to the old one
-* The file location
-* The relevant code change
-  
-<img width="1034" alt="Screenshot 2021-04-16 at 15 47 07" src="https://user-images.githubusercontent.com/33180547/115033723-0be46800-9ecb-11eb-86f0-c11b55f87ad7.png">
-
+Finally if you have made any changes or solved a problem that might reoccur in the future, don't hesitate to write an entry to the best practices page of our documentation: http://lm-docs.herokuapp.com/docs/code-quality/
