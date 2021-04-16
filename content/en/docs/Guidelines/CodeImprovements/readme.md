@@ -1,6 +1,7 @@
 ---
 title: "Clean up your README"
 linkTitle: "README"
+toc_hide: true
 weight: 100
 date: 2021-03-08
 description: >-
