@@ -11,9 +11,9 @@ description: >-
 This page explains the process used for performance upgrades. The four main steps to this workflow are:
 
 1. [Run MiniProfiler](#miniprofiler) on the page, look at the times for code execution and the number of queries
-1. [Extract non-performant code into it’s own method and test](#extract-and-test) it as is
-1. [Create new version of the method](#improve-performance) with the more faster code
-1. [Share learnings](#share-learnings) you have made in the Best Practices page
+2. [Extract non-performant code into it’s own method and test](#extract-and-test) it as is
+3. [Create new version of the method](#improve-performance) with the faster code
+4. [Share learnings](#share-learnings) you have made in the Best Practices page
 
 ### MiniProfiler
 
@@ -46,7 +46,7 @@ end
 
 ### Extract and Test
 
-Once you have identified the faulty code you should extract it into its own method.  
+Once you have identified the faulty code you should extract it into its own method. This methodology is outlined by Martin Flower in his book _Refactoring_ (e.g. https://refactoring.com/catalog/extractFunction.html).  
 In the previous example the extracted code was placed in `app/models/p_category.rb` :  
 ```
 def self.get_p_categories_from_s_category_ids_deprecated(s_category_ids)
