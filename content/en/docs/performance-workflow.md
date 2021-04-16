@@ -46,7 +46,7 @@ end
 
 ### Extract and Test
 
-Once you have identified the faulty code you should extract it into its own method. This methodology is outlined by Martin Flower in his book _Refactoring_ (e.g. https://refactoring.com/catalog/extractFunction.html).  
+Once you have identified the faulty code you should extract it into its own method. This methodology is outlined by Martin Flower in his book _Refactoring_ (e.g. https://lm-docs.herokuapp.com/docs/guidelines/codeimprovements/extract-method/).  
 In the previous example the extracted code was placed in `app/models/p_category.rb` :  
 ```
 def self.get_p_categories_from_s_category_ids_deprecated(s_category_ids)
@@ -96,4 +96,4 @@ Once the new method has passed all the tests and performs to the desired standar
 
 ### Share Learnings
 
-Finally if you have made any changes or solved a problem that might reoccur in the future, don't hesitate to write an entry to the best practices page of our documentation: http://lm-docs.herokuapp.com/docs/code-quality/
+Finally if you have made any changes or solved a problem that might reoccur in the future, don't hesitate to write an entry to the best practices page of our documentation: http://lm-docs.herokuapp.com/docs/best-practices/
