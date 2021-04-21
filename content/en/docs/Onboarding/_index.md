@@ -3,5 +3,8 @@ title: "Onboarding"
 linkTitle: "Onboarding"
 weight: 2
 description: >
-  This section has everything you may want to know if you're new to ListMinut.
+  We want to put in this section everything needed so newcomers can find their way.
 ---
+
+- **Ruby & Ruby on Rails tutorial**: we share a tutorial to get you up to speed
+  with our main back-end language and framework.
