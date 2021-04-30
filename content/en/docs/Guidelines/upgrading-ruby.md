@@ -49,3 +49,6 @@ already includes.
 7. Deploy in a review app and do an exploratory manual test just to see if you
    catch anything out of the ordinary.
 8. Add tests of tickets for any of your findings and fixes.
+9. Share to all devs (also outside of back-end team) about the change, and make
+   sure to give them support on the upgrade on their local machines if need it
+   be
