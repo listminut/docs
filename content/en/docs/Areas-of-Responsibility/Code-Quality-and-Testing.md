@@ -25,9 +25,9 @@ description: >
 
 - [ ] Reach 40% code coverage (28% is 0)
 - [ ] Apply all possible automated rubocop fixes
-- [ ] Extend CI with at least one of the following
-  - [ ] Add evaluation of unused code in PR 
-  - [ ] Add Reek (self hosted alternative to CodeClimate)
+- [x] Integrate CodeClimate ~~Extend CI with at least one of the following~~
+  - ~~Add evaluation of unused code in PR~~
+  - ~~Add Reek (self hosted alternative to CodeClimate)~~
 - [ ] PoC Feature Flags
 - [ ] Do at least one presentations/workshops/article on
   - [ ] Testing
