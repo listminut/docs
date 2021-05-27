@@ -20,6 +20,7 @@ description: >
 ### 2021Q3
 
 - [ ] Reach 60% code coverage
+- [ ] Remove Firebase based push notifications
 
 ### 2021Q2
 
