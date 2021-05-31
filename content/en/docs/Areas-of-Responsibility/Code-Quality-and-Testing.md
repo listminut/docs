@@ -15,12 +15,12 @@ description: >
 
 ### 2021Q4
 
-- [ ] Reach 80% code coverage
-
 ### 2021Q3
 
-- [ ] Reach 60% code coverage
 - [ ] Remove Firebase based push notifications
+- [ ] Do at least one presentations/workshops/article on
+  - [ ] Testing - BDD
+  - [ ] Architecture
 
 ### 2021Q2
 
@@ -30,9 +30,10 @@ description: >
   - ~~Add evaluation of unused code in PR~~
   - ~~Add Reek (self hosted alternative to CodeClimate)~~
 - [ ] PoC Feature Flags
-- [ ] Do at least one presentations/workshops/article on
-  - [ ] Testing
+- [x] Do at least one presentations/workshops/article on
+  - [x] Testing - TDD
   - [ ] Architecture
+- [x] (unplanned) Add ADR Framework
 
 ### 2021Q1
 
